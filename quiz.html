@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+    <head>
         <title> Political Economy Compass </title>
         <meta charset="UTF-8">
         <meta name="author" content="leet-man">
         <link rel="icon" type="image/svg+xml" href="Compass.svg">
         <link rel="stylesheet" href="style.css">
- </head>
- <body>
-      <header> 
-          <h1> Political Economy Compass</h1>
-          <h2>By leet-man 2025</h2>
-      </header>  
-     <main>
-          <form id="quizForm">
-            <section class="question-section" style="display:block;">
-                 <h2>Question 1: Poverty is humankind's natural condition.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q1" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q1" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q1" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q1" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                         <input type="radio" name="q1" value="strongly-disagree">
-                         Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 2: Those who came to an area first shouldn't have a greater claim to that area than those who came later.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q2" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q2" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q2" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q2" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q2" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
+    </head>
+    <body>
+        <header> 
+            <h1> Political Economy Compass</h1>
+            <h2>By leet-man 2025</h2>
+        </header>  
+        <main>
+            <form id="quizForm">
+                <section class="question-section" style="display:block;">
+                    <h2>Question 1: Poverty is humankind's natural condition.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q1" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q1" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q1" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q1" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                            <input type="radio" name="q1" value="strongly-disagree">
+                            Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 2: Those who came to an area first shouldn't have a greater claim to that area than those who came later.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q2" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q2" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q2" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q2" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q2" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
              <section class="question-section" style="display:none;">
                  <h2>Question 3: Society writ-large should have a larger say in the management of productive forces.</h2>
                      <form>
@@ -94,1008 +94,1008 @@
                  <button type="button" onclick="prevQuestion()">Previous</button>
                  <button type="button" onclick="nextQuestion()">Next</button>
              </section>
-             <section class="question-section" style="display:none;">
-                 <h2> Question 4: Taxation is just but a ruder and more primitive means of socializing income.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q4" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q4" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q4" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q4" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q4" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2> Question 5: Nobody created land, therfore nobody can exclude others from it without their compensation.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q5" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q5" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q5" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q5" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q5" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2> Question 6: There is no such thing as society, just individuals.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q6" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q6" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q6" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q6" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q6" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2> Question 7: There is an inherent contradiction of interests between managers of capital and those who sell their labor to their managers.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q7" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q7" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q7" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q7" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q7" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>   
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 8: An economy consciously planned by society at-large is superior to a market economy.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q8" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q8" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q8" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q8" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q8" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 9: The needs of society in the aggregate are more important than the wants of a single individual person.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q9" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q9" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q9" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q9" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q9" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 10: There is no such thing as free lunch</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q10" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q10" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q10" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q10" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q10" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 11: Freedom and fairness are not contradicting values.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q11" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q11" value="agree">
-                             Somwhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q11" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q11" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q11" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 12: I support property taxes.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q12" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q12" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q12" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q12" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q12" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 13: I support income taxes.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q13" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q13" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q13" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q13" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q13" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 14: I support confiscating unimproved land without compensating the private titleholder.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q14" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q14" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q14" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q14" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q14" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 15: Utility markets are free markets.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q15" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q15" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q15" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q15" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q15" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             </section class="question-section" style="display:none;">
-                 <h2>Question 16: I'm not opposed to the philosophy of Marx and Engels.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q16" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q16" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q16" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q16" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q16" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 17: You can only hate Henry George if you misunderstand his philosphy.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q17" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q17" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q17" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q17" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q17" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 18: Equitable landownership alone can alleviate racial inequality in South Africa.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q18" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q18" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q18" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q18" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q18" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 19: patents should be abolished and replaced with prizes for new inventions. </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q19" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q19" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q19" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q19" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q19" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 20: The problem with Generative Ai isn't the training of it on intellectual property, but that most of the models are behind paywalls and therefore the renewed digital commons are mostly already enclosed.</h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q20" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q20" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q20" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q20" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q20" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 21: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q21" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q21" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q21" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q21" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q21" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 22: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q22" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q22" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q22" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q22" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q22" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 23: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q23" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q23" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q23" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q23" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q23" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 24: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q24" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q24" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q24" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q24" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q24" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 25: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q25" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q25" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q25" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q25" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q25" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 26: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q26" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q26" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q26" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q26" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q26" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 27: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q27" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q27" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q27" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q27" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q27" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 28: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q28" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q28" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q28" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q28" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q28" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 29: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q29" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q29" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q29" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q29" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q29" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 30: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q30" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q30" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q30" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q30" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q30" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 31: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q31" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q31" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q31" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q31" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q31" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 32: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q32" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q32" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q32" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q32" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q32" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 33: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q33" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q33" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q33" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q33" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q33" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 34: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q34" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q34" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q34" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q34" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q34" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 35: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q35" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q35" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q35" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q35" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q35" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 36: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q36" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q36" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q36" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q36" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q36" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 37: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q37" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q37" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q37" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q37" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q37" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 38: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q38" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q38" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q38" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q38" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q38" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 39: <!-- PLACEHOLDER TITLE --> </h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q39" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q39" value="agree">
-                             Somewhat Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q39" value="unsure">
-                             Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q39" value="disagree">
-                             Somewhat Disagree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q39" value="strongly-disagree">
-                             Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="button" onclick="nextQuestion()">Next</button>
-             </section>
-             <section class="question-section" style="display:none;">
-                 <h2>Question 40: <!-- PLACEHOLDER TITLE --></h2>
-                     <form>
-                         <label>
-                             <input type="radio" name="q40" value="strongly-agree" required>
-                             Strongly Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q40" value="agree">
-                             Agree
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q40" value="unsure">
-                              Unsure/Don't Know
-                         </label><br>
-                         <label>
-                             <input type="radio" name="q40" value="disagree">
-                             Disagree
-                         </label><br>
-                         <label>
-                         <input type="radio" name="q40" value="strongly-disagree">
-                         Strongly Disagree
-                         </label>
-                     </form>
-                 <button type="button" onclick="prevQuestion()">Previous</button>
-                 <button type="submit">Submit</button>
-             </section>
-         </form>
-     </main>
- </body>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 4: Taxation is just but a ruder and more primitive means of socializing income.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q4" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q4" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q4" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q4" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q4" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 5: Nobody created land, therfore nobody can exclude others from it without their compensation.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q5" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q5" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q5" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q5" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q5" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 6: There is no such thing as society, just individuals.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q6" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q6" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q6" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q6" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q6" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 7: There is an inherent contradiction of interests between managers of capital and those who sell their labor to their managers.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q7" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q7" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q7" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q7" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q7" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>   
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 8: An economy consciously planned by society at-large is superior to a market economy.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q8" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q8" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q8" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q8" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q8" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 9: The needs of society in the aggregate are more important than the wants of a single individual person.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q9" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q9" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q9" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q9" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q9" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 10: There is no such thing as free lunch</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q10" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q10" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q10" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q10" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q10" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 11: Freedom and fairness are not contradicting values.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q11" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q11" value="agree">
+                                Somwhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q11" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q11" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q11" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 12: I support property taxes.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q12" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q12" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q12" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q12" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q12" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 13: I support income taxes.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q13" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q13" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q13" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q13" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q13" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 14: I support confiscating unimproved land without compensating the private titleholder.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q14" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q14" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q14" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q14" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q14" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 15: Utility markets are free markets.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q15" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q15" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q15" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q15" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q15" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                </section class="question-section" style="display:none;">
+                    <h2>Question 16: I'm not opposed to the philosophy of Marx and Engels.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q16" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q16" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q16" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q16" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q16" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 17: You can only hate Henry George if you misunderstand his philosphy.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q17" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q17" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q17" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q17" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q17" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 18: Equitable landownership alone can alleviate racial inequality in South Africa.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q18" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q18" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q18" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q18" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q18" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 19: patents should be abolished and replaced with prizes for new inventions.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q19" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q19" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q19" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q19" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q19" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 20: The problem with Generative Ai isn't the training of it on intellectual property, but that most of the models are behind paywalls and therefore the renewed digital commons are mostly already enclosed.</h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q20" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q20" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q20" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q20" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q20" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 21: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q21" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q21" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q21" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q21" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q21" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 22: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q22" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q22" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q22" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q22" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q22" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 23: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q23" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q23" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q23" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q23" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q23" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 24: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q24" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q24" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q24" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q24" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q24" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 25: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q25" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q25" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q25" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q25" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q25" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 26: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q26" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q26" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q26" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q26" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q26" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 27: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q27" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q27" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q27" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q27" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q27" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 28: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q28" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q28" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q28" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q28" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q28" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 29: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q29" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q29" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q29" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q29" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q29" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 30: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q30" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q30" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q30" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q30" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q30" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 31: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q31" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q31" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q31" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q31" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q31" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 32: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q32" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q32" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q32" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q32" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q32" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 33: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q33" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q33" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q33" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q33" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q33" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 34: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q34" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q34" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q34" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q34" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q34" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 35: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q35" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q35" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q35" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q35" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q35" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 36: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q36" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q36" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q36" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q36" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q36" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 37: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q37" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q37" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q37" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q37" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q37" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 38: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q38" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q38" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q38" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q38" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q38" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 39: <!-- PLACEHOLDER TITLE --> </h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q39" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q39" value="agree">
+                                Somewhat Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q39" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q39" value="disagree">
+                                Somewhat Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q39" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="nextQuestion()">Next</button>
+                </section>
+                <section class="question-section" style="display:none;">
+                    <h2>Question 40: <!-- PLACEHOLDER TITLE --></h2>
+                        <form>
+                            <label>
+                                <input type="radio" name="q40" value="strongly-agree" required>
+                                Strongly Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q40" value="agree">
+                                Agree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q40" value="unsure">
+                                Unsure/Don't Know
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q40" value="disagree">
+                                Disagree
+                            </label><br>
+                            <label>
+                                <input type="radio" name="q40" value="strongly-disagree">
+                                Strongly Disagree
+                            </label>
+                        </form>
+                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="submit">Submit</button>
+                </section>
+            </form>
+        </main>
+    </body>
 </html>
 
 <script>
