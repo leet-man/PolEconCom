@@ -1,4 +1,103 @@
-@import url(Futura_Stencil_ICG.ttf);
-title {
+@font-face {
+    font-family: 'Futura Stencil ICG';
+    src: url('Futura_Stencil_ICG.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Futura ICG';
+    src: url('Futura_ICG.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FuturaOrtoSh-Bold';
+    src: url('FuturaOrtoSh-Bold.ttf') format('truetype');
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    animation: headerColors 8s linear infinite;
+}
+@keyframes headerColors {
+    0%   { background-color: #000000; }
+    25%  { background-color: #37377f; }
+    50%  { background-color: #377f37; }
+    75%  { background-color: #7f3737; }
+    100% { background-color: #000000; }
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+}
+.left-group, .right-group {
+    flex: 1;
+}
+
+.left-group section:nth-child(1) {
+    background-color: #1C1C40;
+    padding: 20px;
+    animation: leftsectioncolors1 8s linear infinite;
+}
+@keyframes leftsectioncolors1 {
+    0%   { background-color: #1C1C40; }
+    50%  { background-color: #3C3C3C; }
+    100% { background-color: #1C1C40; }
+}
+
+.left-group section:nth-child(2) {
+    background-color: #375B5B;
+    padding: 20px;
+    animation: leftsectioncolors2 8s linear infinite;
+}
+@keyframes leftsectioncolors2 {
+    0%   { background-color: #375B5B; }
+    50%  { background-color: #401C1C; }
+    100% { background-color: #375B5B; }
+}
+
+.right-group section {
+    animation: none;
+    padding: 20px;
+}
+.right-group section:nth-child(1) {
+    background-color: #7f3737;
+}
+.right-group section:nth-child(2) {
+    background-color: #37377f;
+}
+.right-group section:nth-child(3) {
+    background-color: #377f37;
+}
+.right-group section:nth-child(4) {
+    background-color: #000000;
+}
+
+form {
+    background-color: #000000;
+}
+h1 {
+    margin-bottom: 0.1em;
     font-family: 'Futura Stencil ICG', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+}
+h2 {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-family: 'FuturaOrtoSh-Bold', sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+}
+h3 { 
+   margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-family: 'FuturaOrtoSh-Bold', sans-serif;
+    font-size: 23px;
+    color: #ffffff;
+}
+p, label { 
+    margin-top: 0.1em;
+    font-family: 'Futura ICG', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
 }
