@@ -176,7 +176,7 @@
                     <button type="button" onclick="nextQuestion()">Next</button>
                 </section>
                 <section class="question-section" style="display:none;">
-                    <h2>Question 7: There is an inherent contradiction of interests between managers of capital and those who sell their labor to their managers.</h2>
+                    <h2>Question 7: There is an inherent contradiction of interests between managers of capital and those who sell their labor to those managers.</h2>
                         <form>
                             <label>
                                 <input type="radio" name="q7" value="strongly-agree" required>
@@ -554,7 +554,7 @@
                     <button type="button" onclick="nextQuestion()">Next</button>
                 </section>
                 <section class="question-section" style="display:none;">
-                    <h2>Question 21: "Equality of outcomes", shouldn't be regarded as a desired human value, in regards for the welfare of individual flourishing.</h2>
+                    <h2>Question 21: "Equality of outcomes", shouldn't be regarded as a desired human value for the welfare of individual flourishing.</h2>
                         <form>
                             <label>
                                 <input type="radio" name="q21" value="strongly-agree" required>
@@ -770,7 +770,7 @@
                     <button type="button" onclick="nextQuestion()">Next</button>
                 </section>
                 <section class="question-section" style="display:none;">
-                    <h2>Question 29: I believe that perfect competition between firms is superior or equivalent to direct inustrial cooperation.</h2>
+                    <h2>Question 29: I believe that perfect competition between firms is superior or equivalent to direct industrial cooperation.</h2>
                         <form>
                             <label>
                                 <input type="radio" name="q29" value="strongly-agree" required>
@@ -1109,6 +1109,19 @@ function showQuestion(index) {
 }
 
 function nextQuestion() {
+  // Find the current section
+  const currentSection = sections[current];
+  // Find the radio inputs in the current section
+  const radios = currentSection.querySelectorAll('input[type="radio"]');
+  // Check if any radio is checked
+  let answered = false;
+  radios.forEach(radio => {
+    if (radio.checked) answered = true;
+  });
+  if (!answered) {
+    alert('Please select an answer before continuing.');
+    return;
+  }
   if (current < sections.length - 1) {
     current++;
     showQuestion(current);
