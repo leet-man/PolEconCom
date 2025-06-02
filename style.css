@@ -32,49 +32,64 @@ header {
 .left-group, .right-group {
     flex: 1;
 }
+    .left-group section:nth-child(1) {
+        background-color: #1C1C40;
+        padding: 20px;
+        animation: leftsectioncolors1 8s linear infinite;
+    }
+    .left-group section:nth-child(2) {
+        background-color: #375B5B;
+        padding: 20px;
+        animation: leftsectioncolors2 8s linear infinite;
+    }
+        @keyframes leftsectioncolors1 {
+            0%   { background-color: #1C1C40; }
+            50%  { background-color: #3C3C3C; }
+            100% { background-color: #1C1C40; }
+        }
+        @keyframes leftsectioncolors2 {
+            0%   { background-color: #375B5B; }
+            50%  { background-color: #401C1C; }
+            100% { background-color: #375B5B; }
+        }
 
-.left-group section:nth-child(1) {
-    background-color: #1C1C40;
+    .right-group section {
+        animation: none;
+        padding: 20px;
+    }
+        .right-group section:nth-child(1) {
+            background-color: #7f3737;
+        }
+        .right-group section:nth-child(2) {
+            background-color: #37377f;
+        }
+        .right-group section:nth-child(3) {
+            background-color: #377f37;
+        }
+        .right-group section:nth-child(4) {
+            background-color: #000000;
+        }
+
+.question-section.group1 {
+    background-color: #1c1c40;
     padding: 20px;
-    animation: leftsectioncolors1 8s linear infinite;
+    animation: questionSectionColors1 8s linear infinite;
 }
-@keyframes leftsectioncolors1 {
-    0%   { background-color: #1C1C40; }
-    50%  { background-color: #3C3C3C; }
-    100% { background-color: #1C1C40; }
-}
-
-.left-group section:nth-child(2) {
+.question-section.group2 {
     background-color: #375B5B;
     padding: 20px;
-    animation: leftsectioncolors2 8s linear infinite;
+    animation: questionSectionColors2 8s linear infinite;
 }
-@keyframes leftsectioncolors2 {
-    0%   { background-color: #375B5B; }
-    50%  { background-color: #401C1C; }
-    100% { background-color: #375B5B; }
-}
-
-.right-group section {
-    animation: none;
-    padding: 20px;
-}
-.right-group section:nth-child(1) {
-    background-color: #7f3737;
-}
-.right-group section:nth-child(2) {
-    background-color: #37377f;
-}
-.right-group section:nth-child(3) {
-    background-color: #377f37;
-}
-.right-group section:nth-child(4) {
-    background-color: #000000;
-}
-
-.question-section {
-    background-color: #000000;
-}
+    @keyframes questionSectionColors1 {
+        0%   { background-color: #1c1c40; }
+        50%  { background-color: #3c3c3c; }
+        100% { background-color: #1c1c40; }
+    }
+    @keyframes questionSectionColors2 {
+        0%   { background-color: #375B5B; }
+        50%  { background-color: #401C1C; }
+        100% { background-color: #375B5B; }
+    }
 
 h1 {
     margin-bottom: 0.1em;
