@@ -13,7 +13,7 @@
 
 header {
     background-color: #000000;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     animation: headerColors 8s linear infinite;
 }
@@ -72,9 +72,10 @@ header {
     background-color: #000000;
 }
 
-form {
+.question-section {
     background-color: #000000;
 }
+
 h1 {
     margin-bottom: 0.1em;
     font-family: 'Futura Stencil ICG', sans-serif;
