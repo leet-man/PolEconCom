@@ -10,9 +10,13 @@
     <body>
         <header> 
             <h1>Political Economy Compass</h1>
-            <h2>By leet-man 2025</h2>
+            <h2>Quiz</h2>
         </header>  
         <main>
+            <nav>
+                 <a href="home.html">Home</a>
+                 <a href="quiz.html">Quiz</a>
+            </nav>
             <form id="quizForm">
                 <section class="question-section group1" style="display:block;">
                     <h2>Question 1: Poverty is humankind's natural condition.</h2>
@@ -1095,6 +1099,9 @@
                 </section>
             </form>
         </main>
+        <footer>
+            <h2>© 2025 leet-man</h2>
+        </footer>
     </body>
 </html>
 
@@ -1102,18 +1109,20 @@
 let current = 0;
 const sections = document.querySelectorAll('.question-section');
 
+if (localStorage.getItem('quizCurrent')) {
+  current = parseInt(localStorage.getItem('quizCurrent'), 10) || 0;
+}
+
 function showQuestion(index) {
   sections.forEach((sec, i) => {
     sec.style.display = i === index ? 'block' : 'none';
   });
+  localStorage.setItem('quizCurrent', index);
 }
 
 function nextQuestion() {
-  // Find the current section
   const currentSection = sections[current];
-  // Find the radio inputs in the current section
   const radios = currentSection.querySelectorAll('input[type="radio"]');
-  // Check if any radio is checked
   let answered = false;
   radios.forEach(radio => {
     if (radio.checked) answered = true;
