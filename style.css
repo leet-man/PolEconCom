@@ -25,6 +25,20 @@ header {
     100% { background-color: #000000; }
 }
 
+a {
+    background-color: #000000;
+    padding: 10px;
+    text-shadow: #C0C0C0 1px 1px 2px;
+    animation: navLinkColors 8s linear infinite;
+}
+@keyframes navLinkColors {
+    0%   { background-color: #000000; }
+    25%  { background-color: #7f3737; }
+    50%  { background-color: #377f37; }
+    75%  { background-color: #37377f; }
+    100% { background-color: #000000; }
+}
+
 .section-container {
     display: flex;
     justify-content: space-between;
@@ -37,17 +51,33 @@ header {
         padding: 20px;
         animation: leftsectioncolors1 8s linear infinite;
     }
+        .compass-image {
+            width: 400px;
+            height: 400px;
+        }
     .left-group section:nth-child(2) {
-        background-color: #375B5B;
+        background-color: #000000;
         padding: 20px;
         animation: leftsectioncolors2 8s linear infinite;
     }
+    .left-group section:nth-child(3) {
+        background-color: #375B5B;
+        padding: 20px;
+        animation: leftsectioncolors3 8s linear infinite;
+    }
         @keyframes leftsectioncolors1 {
+        0%   { background-color: #000000; }
+        25%  { background-color: #37377f; }
+        50%  { background-color: #377f37; }
+        75%  { background-color: #7f3737; }
+        100% { background-color: #000000; }
+        }  
+        @keyframes leftsectioncolors2 {
             0%   { background-color: #1C1C40; }
             50%  { background-color: #3C3C3C; }
             100% { background-color: #1C1C40; }
         }
-        @keyframes leftsectioncolors2 {
+        @keyframes leftsectioncolors3 {
             0%   { background-color: #375B5B; }
             50%  { background-color: #401C1C; }
             100% { background-color: #375B5B; }
@@ -91,6 +121,20 @@ header {
         100% { background-color: #375B5B; }
     }
 
+footer {
+    background-color: #377f37;
+    padding: 18px;
+    text-align: center;
+    animation: footerColors 8s linear infinite;
+}
+@keyframes footerColors {
+    0%   { background-color: #377f37; }
+    25%  { background-color: #7f3737; }
+    50%  { background-color: #000000; }
+    75%  { background-color: #37377f; }
+    100% { background-color: #377f37; }
+}
+
 h1 {
     margin-bottom: 0.1em;
     font-family: 'Futura Stencil ICG', sans-serif;
@@ -104,7 +148,7 @@ h2 {
     font-size: 28px;
     color: #ffffff;
 }
-h3 { 
+h3, a { 
    margin-top: 0.1em;
     margin-bottom: 0.1em;
     font-family: 'FuturaOrtoSh-Bold', sans-serif;
