@@ -14,17 +14,8 @@
 header {
     position: relative;
     background-color: #000000;
-    padding-bottom: 48px;
     text-align: center;
-    animation: headerColors 8s linear infinite;
 }
-    @keyframes headerColors {
-        0%   { background-color: #000000; }
-        25%  { background-color: #37377f; }
-        50%  { background-color: #377f37; }
-        75%  { background-color: #7f3737; }
-        100% { background-color: #000000; }
-    }
     nav {
         position: static;       
         left: unset;
@@ -41,15 +32,7 @@ header {
             background-color: #000000;
             padding: 10px;
             text-shadow: #C0C0C0 1px 1px 2px;
-            animation: navLinkColors 8s linear infinite;
         }
-            @keyframes navLinkColors {
-                0%   { background-color: #000000; }
-                25%  { background-color: #7f3737; }
-                50%  { background-color: #377f37; }
-                75%  { background-color: #37377f; }
-                100% { background-color: #000000; }
-            }
 
 html, body {
     height: 100%;
@@ -73,8 +56,7 @@ html, body {
                 flex-direction: column;
                 height: 100%;
             }
-                .left-group section,
-                .right-group section {
+                .left-group section, .right-group section {
                     flex: 1 1 0;
                     display: flex;
                     flex-direction: column;
@@ -180,14 +162,6 @@ footer {
     background-color: #377f37;
     padding: 18px;
     text-align: center;
-    animation: footerColors 8s linear infinite;
-}
-@keyframes footerColors {
-    0%   { background-color: #377f37; }
-    25%  { background-color: #7f3737; }
-    50%  { background-color: #000000; }
-    75%  { background-color: #37377f; }
-    100% { background-color: #377f37; }
 }
 
 h1 {
