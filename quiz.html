@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Document type declaration for HTML5 -->
     <head>
-        <title>Political Economy Compass</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="leet-man">
-        <link rel="icon" type="image/svg+xml" href="Compass.svg">
-        <link rel="stylesheet" href="style.css">
+        <title>Political Economy Compass</title> <!-- Title of the page displayed in the browser tab -->
+        <meta charset="UTF-8"> <!-- Character encoding for the document -->
+        <meta name="author" content="leet-man"> <!-- Author of the page for metadata purposes -->
+        <link rel="icon" type="image/svg+xml" href="Compass.svg"> <!-- Favicon for the page, displayed in the browser tab -->
+        <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file for styling the page -->
     </head>
     <body>
         <header> 
-            <h1>Political Economy Compass</h1>
-            <h2>Quiz</h2>
-            <nav>
-                <a href="home.html">Home</a>
+            <h1>Political Economy Compass</h1> <!-- Main title of the page -->
+            <h2>Quiz</h2> <!-- Subtitle indicating the current page -->
+            <nav> <!-- Navigation links to other pages -->
+                <a href="home.html">Home</a> 
                 <a href="quiz.html">Quiz</a>
                 <a href="results.html">Results</a>
             </nav>
         </header>  
         <main>
-            <form id="quizForm">
-                <section class="question-section group1" style="display:block;">
-                    <h2>Question 1 of 40: Poverty is humankind's natural condition.</h2>
+            <form id="quizForm"> <!-- Form to collect quiz responses -->
+                <section class="question-section group1" style="display:block;"> <!-- First group question section, initially displayed -->
+                    <h2>Question 1 of 40: Poverty is humankind's natural condition.</h2> <!-- Question title -->
                         <label>
-                            <input type="radio" name="q1" value="strongly-agree" required>
+                            <input type="radio" name="q1" value="strongly-agree" required> <!-- Radio button for Strongly Agree -->
                             Strongly Agree
                         </label><br>
                         <label>
-                            <input type="radio" name="q1" value="agree">
+                            <input type="radio" name="q1" value="agree"> <!-- Radio button for Somewhat Agree -->
                             Somewhat Agree
                         </label><br>
                         <label>
-                            <input type="radio" name="q1" value="unsure">
+                            <input type="radio" name="q1" value="unsure"> <!-- Radio button for Unsure/Don't Know -->
                             Unsure/Don't Know
                         </label><br>
                         <label>
-                            <input type="radio" name="q1" value="disagree">
+                            <input type="radio" name="q1" value="disagree"> <!-- Radio button for Somewhat Disagree -->
                             Somewhat Disagree
                         </label><br>
                         <label>
-                        <input type="radio" name="q1" value="strongly-disagree">
+                        <input type="radio" name="q1" value="strongly-disagree"> <!-- Radio button for Strongly Disagree -->
                         Strongly Disagree
                         </label>
-                    <button type="button" onclick="nextQuestion()">Next</button>
+                    <button type="button" onclick="nextQuestion()">Next</button> <!-- Button to go to the next question -->
                 </section>
                 <section class="question-section group1" style="display:none;">
                     <h2>Question 2 of 40: Those who came to an area first shouldn't have a greater claim to that area than those who came later.</h2>
@@ -65,10 +65,10 @@
                             <input type="radio" name="q2" value="strongly-disagree">
                             Strongly Disagree
                         </label>
-                    <button type="button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" onclick="prevQuestion()">Previous</button> <!-- Button to go to the previous question -->
                     <button type="button" onclick="nextQuestion()">Next</button>
                 </section>
-                <section class="question-section group2" style="display:none;">
+                <section class="question-section group2" style="display:none;"> <!-- Second group question section, initially hidden -->
                     <h2>Question 3 of 40: Society writ-large should have a larger say in the management of productive forces.</h2>
                         <label>
                             <input type="radio" name="q3" value="strongly-agree" required>
@@ -1016,13 +1016,13 @@
                             Strongly Disagree
                         </label>
                     <button type="button" onclick="prevQuestion()">Previous</button>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Submit</button> <!-- Submit button to finalize the quiz -->
                 </section>
             </form>
         </main>
         <footer>
-            <h2>© 2025 leet-man</h2>
+            <h2>© 2025 leet-man</h2> <!-- Footer with copyright information -->
         </footer>
-        <script src="script.js"></script>
+        <script src="script.js"></script> <!-- Link to external JavaScript file for color animations and quiz logic-->
     </body>
 </html>
