@@ -1,192 +1,192 @@
-@font-face {
+@font-face { /* Futura Stencil ICG */
     font-family: 'Futura Stencil ICG';
     src: url('Futura_Stencil_ICG.ttf') format('truetype');
 }
-@font-face {
+    h1 {
+        margin-bottom: 0.1em; /* low bottom margins */
+        font-family: 'Futura Stencil ICG', sans-serif;
+        font-size: 48px; /* larger font size */
+        color: #ffffff; /* white text */
+    }
+@font-face { /* Futura ICG */
     font-family: 'Futura ICG';
     src: url('Futura_ICG.ttf') format('truetype');
 }
-@font-face {
+    p, label { 
+        margin-top: 0.1em; /* low top margins */
+        font-family: 'Futura ICG', sans-serif;
+        font-size: 18px; /* smaller font size */
+        color: #ffffff;
+    }
+@font-face { /* FuturaOrtoSh-Bold */
     font-family: 'FuturaOrtoSh-Bold';
     src: url('FuturaOrtoSh-Bold.ttf') format('truetype');
 }
-
-header {
-    position: relative;
-    background-color: #000000;
-    text-align: center;
-}
-    nav {
-        position: static;       
-        left: unset;
-        transform: none;
-        bottom: unset;
-        background: none;
-        z-index: 10;
-        display: flex;
-        gap: 10px;
-        padding: 0;
-        justify-content: flex-start;
+    h2 {
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        font-family: 'FuturaOrtoSh-Bold', sans-serif;
+        font-size: 28px; /* larger font size */
+        color: #ffffff;
     }
-        a {
-            background-color: #000000;
-            padding: 10px;
-            text-shadow: #C0C0C0 1px 1px 2px;
+    h3, a { 
+    margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        font-family: 'FuturaOrtoSh-Bold', sans-serif;
+        font-size: 23px; /* larger font size */
+        color: #ffffff;
+    }
+
+
+
+html, body { /*styling for html and body*/
+    height: 100%; /* Ensure full height for body */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+    body { /* Body styling */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh; /* Ensure body takes full height */
+    }
+        header { /* Header styling */
+            position: relative; /* Position relative for header */
+            background-color: #000000; /* Black background */
+            text-align: center; /* Centered text */
         }
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-        main {
-            flex: 1 0 auto;
+        nav { /* Navigation bar styling */
+            position: static; /* Static position for navigation */  
+            left: unset; /* Reset left position */
+            transform: none; /* Reset transform */
+            bottom: unset; /* Reset bottom position */
+            background: none; /* No background for navigation */
+            z-index: 10; /* Ensure navigation is above other elements */
+            display: flex; /* Use flexbox for navigation */
+            gap: 10px; /* Space between links */
+            padding: 0;
+            justify-content: flex-start; /* Align links to the left */
+        }
+            a { /* Link styling */
+                background-color: #000000;
+                padding: 10px; /* Padding for links */
+                text-shadow: #C0C0C0 1px 1px 2px; /* Text shadow for links */
+            }
+        main { /* Main content styling */
+            flex: 1 0 auto; /* Allow main to grow and shrink */
             display: flex;
             flex-direction: column;
         }
-            .left-group, .right-group {
-                flex: 1;
+            .left-group, .right-group { /* Left and right groups styling */
+                flex: 1; /* Allow groups to grow */
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                height: 100%; 
             }
-                .left-group section, .right-group section {
-                    flex: 1 1 0;
+                .left-group section, .right-group section { /* Left and right sections styling */
+                    flex: 1 0;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
                 }  
-                    .section-container {
+                    .section-container { /* Container for sections */
                         flex: 1 0 auto;
                         display: flex;
-                        justify-content: space-between;
-                        align-items: stretch;
+                        justify-content: space-between; /* Space between sections */
+                        align-items: stretch; /* Stretch sections to full height */
                     }
-                    .left-group, .right-group {
+                    .left-group, .right-group { /* Flexbox for left and right groups */
                         flex: 1;
                     }
-                        .left-group section:nth-child(1) {
-                            background-color: #1C1C40;
+                        .left-group section:nth-child(1) { /* First section in left group */
+                            background-color: #1C1C40; /* Dark blue background */
                             padding: 20px;
-                            animation: leftsectioncolors1 8s linear infinite;
+                            animation: leftsectioncolors1 8s linear infinite; /* Animation for left section colors */
                         }
-                            .compass-image {
-                                width: 400px;
-                                height: 400px;
+                            .compass-image { /* Compass image styling */
+                                width: 400px; /* Fixed width for compass image */
+                                height: 400px; /* Fixed height for compass image */
                             }
-                        .left-group section:nth-child(2) {
+                        .left-group section:nth-child(2) { /* Second section in left group */
                             background-color: #000000;
                             padding: 20px;
                             animation: leftsectioncolors2 8s linear infinite;
                         }
-                        .left-group section:nth-child(3) {
-                            background-color: #375B5B;
+                        .left-group section:nth-child(3) { /* Third section in left group */
+                            background-color: #375B5B; /* Teal background */
                             padding: 20px;
                             animation: leftsectioncolors3 8s linear infinite;
                         }
-                            @keyframes leftsectioncolors1 {
-                            0%   { background-color: #000000; }
-                            25%  { background-color: #37377f; }
-                            50%  { background-color: #377f37; }
-                            75%  { background-color: #7f3737; }
-                            100% { background-color: #000000; }
+                            @keyframes leftsectioncolors1 { /* Color animations for first left-group section */
+                            0%   { background-color: #000000; } /* Start with black */
+                            25%  { background-color: #37377f; } /* Transition to dark blue */
+                            50%  { background-color: #377f37; } /* Transition to green */
+                            75%  { background-color: #7f3737; } /* Transition to red */
+                            100% { background-color: #000000; } /* End with black */
                             }  
-                            @keyframes leftsectioncolors2 {
-                                0%   { background-color: #1C1C40; }
-                                50%  { background-color: #3C3C3C; }
-                                100% { background-color: #1C1C40; }
+                            @keyframes leftsectioncolors2 { /* Color animations for second left-group section */
+                                0%   { background-color: #1C1C40; } /* Start with dark blue */
+                                50%  { background-color: #3C3C3C; } /* Transition to gray */
+                                100% { background-color: #1C1C40; } /* End with dark blue */
                             }
-                            @keyframes leftsectioncolors3 {
-                                0%   { background-color: #375B5B; }
-                                50%  { background-color: #401C1C; }
-                                100% { background-color: #375B5B; }
+                            @keyframes leftsectioncolors3 { /* Color animations for third left-group section */
+                                0%   { background-color: #375B5B; } /* Start with teal */
+                                50%  { background-color: #401C1C; } /* Transition to dark red */
+                                100% { background-color: #375B5B; } /* End with teal */
                             }
 
-                        .right-group section {
-                            animation: none;
+                        .right-group section { /* Right group sections styling */
+                            animation: none; /* No animation for right group sections */
                             padding: 20px;
                         }
-                            .right-group section:nth-child(1) {
-                                background-color: #7f3737;
+                            .right-group section:nth-child(1) { /* First section in right group */
+                                background-color: #7f3737; /* Red background */
                             }
-                            .right-group section:nth-child(2) {
-                                background-color: #37377f;
+                            .right-group section:nth-child(2) { /* Second section in right group */
+                                background-color: #37377f; /* Dark blue background */
                             }
-                            .right-group section:nth-child(3) {
-                                background-color: #377f37;
+                            .right-group section:nth-child(3) { /* Third section in right group */
+                                background-color: #377f37; /* Green background */
                             }
-                            .right-group section:nth-child(4) {
-                                background-color: #000000;
+                            .right-group section:nth-child(4) { /* Fourth section in right group */
+                                background-color: #000000; /* Black background */
                             }
                 form {
                     flex: 1 1 auto;
                     display: flex;
                     flex-direction: column;
-                    min-height: 0;
-                    height: auto;
+                    min-height: 0; /* Allow form to shrink */
+                    height: auto; /* Auto height for form */
                 }
-                    .question-section {
+                    .question-section { /* Question section styling */
                         flex: 1 1 auto;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                     }
-                    .question-section.group1 {
+                    .question-section.group1 { /* Group 1 question section */
                         background-color: #1c1c40;
                         padding: 20px;
                         animation: questionSectionColors1 8s linear infinite;
                     }
-                    .question-section.group2 {
+                    .question-section.group2 { /* Group 2 question section */
                         background-color: #375B5B;
                         padding: 20px;
                         animation: questionSectionColors2 8s linear infinite;
                     }
-                        @keyframes questionSectionColors1 {
+                        @keyframes questionSectionColors1 { /* Color animations for group 1 question sections */
                             0%   { background-color: #1c1c40; }
                             50%  { background-color: #3c3c3c; }
                             100% { background-color: #1c1c40; }
                         }
-                        @keyframes questionSectionColors2 {
+                        @keyframes questionSectionColors2 { /* Color animations for group 2 question sections */
                             0%   { background-color: #375B5B; }
                             50%  { background-color: #401C1C; }
                             100% { background-color: #375B5B; }
                         }
 
-footer {
+footer { /* Footer styling */
     background-color: #377f37;
     padding: 18px;
     text-align: center;
-}
-
-h1 {
-    margin-bottom: 0.1em;
-    font-family: 'Futura Stencil ICG', sans-serif;
-    font-size: 48px;
-    color: #ffffff;
-}
-h2 {
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    font-family: 'FuturaOrtoSh-Bold', sans-serif;
-    font-size: 28px;
-    color: #ffffff;
-}
-h3, a { 
-   margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    font-family: 'FuturaOrtoSh-Bold', sans-serif;
-    font-size: 23px;
-    color: #ffffff;
-}
-p, label { 
-    margin-top: 0.1em;
-    font-family: 'Futura ICG', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
 }
