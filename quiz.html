@@ -1022,52 +1022,6 @@
         <footer>
             <h2>© 2025 leet-man</h2>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
-
-<script>
-let current = 0;
-const sections = document.querySelectorAll('.question-section');
-
-if (localStorage.getItem('quizCurrent')) {
-  current = parseInt(localStorage.getItem('quizCurrent'), 10) || 0;
-}
-
-function showQuestion(index) {
-  sections.forEach((sec, i) => {
-    sec.style.display = i === index ? 'block' : 'none';
-  });
-  localStorage.setItem('quizCurrent', index);
-}
-
-function nextQuestion() {
-  const currentSection = sections[current];
-  const radios = currentSection.querySelectorAll('input[type="radio"]');
-  let answered = false;
-  radios.forEach(radio => {
-    if (radio.checked) answered = true;
-  });
-  if (!answered) {
-    alert('Please select an answer before continuing.');
-    return;
-  }
-  if (current < sections.length - 1) {
-    current++;
-    showQuestion(current);
-  }
-}
-
-function prevQuestion() {
-  if (current > 0) {
-    current--;
-    showQuestion(current);
-  }
-}
-
-document.getElementById('quizForm').onsubmit = function(e) {
-  e.preventDefault();
-  alert('Quiz submitted!');
-};
-
-showQuestion(current);
-</script>
