@@ -90,8 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 showQuestion(current_1); // Advances to the next question and displays it.
             }
         }
-        function prevQuestion() {
-            // Checks if the current question is not the first one.
+        function prevQuestion() { // Checks if the current question is not the first one.
             if (current_1 > 0) {
                 current_1--;
                 showQuestion(current_1); // Goes back to the previous question and displays it.
